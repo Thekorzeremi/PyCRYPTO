@@ -60,8 +60,7 @@ class MarketData(Base):
     price = Column(Float)
     volume = Column(Float)
     change_24h = Column(Float)
-    timestamp = Column(DateTime(timezone=True), default=lambda: datetime.now(timezone.utc))
-
+    timestamp = Column(DateTime(timezone=True),default=lambda: datetime.now(timezone.utc))
     asset_id = Column(Integer, ForeignKey("crypto_assets.id"))
     asset = relationship("CryptoAsset", back_populates="market_data")
 
