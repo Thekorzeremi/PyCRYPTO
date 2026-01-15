@@ -21,3 +21,4 @@ def get_crypto(symbol: str):
     ] if crypto else []
     session.close()
     return {"symbol": symbol, "data": data}
+

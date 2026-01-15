@@ -2,7 +2,7 @@
     [1,"21:[\"$\",\"div\",null,{\"className\":\"overflow-hidden border-y border-slate-200 bg-white\",\"children\":
         [\"$\",\"div\",null,{\"className\":\"flex animate-scroll whitespace-nowrap\",\"children\":  
             [[\"$\",\"div\",\"204-0\",{\"className\":\"flex shrink-0 items-center gap-3 px-6 py-3\",\"children\":
-                [[\"$\",\"div\",null,{\"className\":\"relative h-6 w-6 shrink-0 overflow-hidden rounded-full\",\"children\":
+                [[\"$\",\"div\",null,{\"className\":\"relative h-6 w-6 shrink-0 oerflow-hidden rounded-full\",\"children\":
                     [\"$\",\"$L6\",null,{\"src\":\"https://pdconfaitguxqbopsmib.supabase.co/storage/v1/object/public/crypto-logos/1-btc.png\",\"alt\":\"Bitcoin\",\"width\":24,\"height\":24,\"className\":\"object-cover\",\"unoptimized\":true}]}],
                     [\"$\",\"span\",null,{\"className\":\"whitespace-nowrap text-sm font-medium text-slate-900\",\"children\":\"Bitcoin\"}],    
                     [\"$\",\"span\",null,{\"className\":\"whitespace-nowrap text-sm text-slate-600\",\"children\":\"83 177,70€\"}],

@@ -2,6 +2,7 @@ import requests
 import json
 import re
 from bs4 import BeautifulSoup
+import datetime
 
 def scrap_url():
     url = "https://www.courscryptomonnaies.com/"
@@ -53,23 +54,41 @@ def scrap_url():
         logo_match = re.search(r'"src"\s*:\s*"([^"]+)"|src="([^"]+)"', cleaned_block)
         logo_url = logo_match.group(1) or logo_match.group(2) if logo_match else None
 
+        symbol_match = re.search(r'crypto-logos/([^./]+)\.png', logo_url) if logo_url else None
+        symbol_final = re.sub(r'[\d-]+', '', symbol_match.group(1)).upper() if symbol_match else None
+        symbol = symbol_final
+
         alt_match = re.search(r'"alt"\s*:\s*"([^"]+)"|alt="([^"]+)"', cleaned_block)
         alt_text = alt_match.group(1) or alt_match.group(2) if alt_match else None
 
         price_match = re.search(r'([\d\s\u00A0\u202F.,]+)€', cleaned_block)
-        price_eur = price_match.group(1).strip() if price_match else None
+        price_eur = None
+        if price_match:
+            raw = price_match.group(1).strip()
+            raw = re.sub(r'[\s\u00A0\u202F]', '', raw)
+            raw = raw.replace(',', '.')
+            try:
+                price_eur = float(raw)
+            except Exception:
+                price_eur = None
 
         variation_match = re.search(r'([+-]?\d+[.,]?\d*)%', cleaned_block)
-        variation_pct = variation_match.group(1) if variation_match else None
+        variation_pct = None
+        if variation_match:
+            raw = variation_match.group(1).strip()
+            raw = raw.replace(',', '.')
+            try:
+                variation_pct = float(raw)
+            except Exception:
+                variation_pct = None
 
         crypto_list.append({
+            "symbol": symbol,
             "name": alt_text,
-            "symbol": logo_url,
-            "price_eur": price_eur,
-            "variation_pct": variation_pct
+            "price": price_eur,
+            "change_24h": variation_pct,
+            "volume": None,
+            "timestamp": datetime.datetime.now().isoformat()
         })
 
-    with open("coins_only.json", "w", encoding="utf-8") as f:
-        f.write(json.dumps(crypto_list, ensure_ascii=False, indent=4))
-
-scrap_url()
+    return crypto_list
