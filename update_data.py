@@ -1,9 +1,9 @@
 import json
 import scrapperCryptocompare as sc1
 import scrapperCoursCryptomonnaies as sc2
-from sqlalchemy.orm import Session
 from db import SessionLocal as DBSession
 from ingest import ingest_market_data, ingest_news
+from threading import Thread
 
 def run_pipeline(scrapper):
     session = DBSession()
@@ -27,3 +27,20 @@ def run_pipeline(scrapper):
                     ingest_news(session, data["news"])
     finally:
         session.close()
+
+def run_pipeline_multithread():
+    """
+    Lance tous les scrappers en parallèle dans des threads.
+    """
+    threads = []
+
+    for scrapper_id in [1, 2]:
+        t = Thread(target=run_pipeline, args=(scrapper_id,))
+        t.start()
+        threads.append(t)
+
+    # On attend que tous les threads aient fini
+    for t in threads:
+        t.join()
+
+    print("Tous les scrappers ont terminé")

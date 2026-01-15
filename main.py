@@ -2,7 +2,7 @@ from fastapi import FastAPI
 from sqlalchemy.orm import Session
 from db import SessionLocal as DBSession
 from models import CryptoAsset, MarketData
-from update_data import run_pipeline
+from update_data import run_pipeline_multithread
 from contextlib import asynccontextmanager
 from scheduler import start_scheduler, shutdown_scheduler
 
@@ -15,10 +15,10 @@ async def lifespan(_app: FastAPI):
 
 app = FastAPI(lifespan=lifespan)
 
-@app.post("/scraping/manual/{scrapper}")
-def manual_scraping(scrapper: int):
-    run_pipeline(scrapper)
-    return {"status": "ok"}
+@app.post("/scraping/manual")
+def manual_scraping():
+    run_pipeline_multithread()
+    return {"status": "ok", "message": "Scraping manuel exécuté en parallèle"}
 
 @app.get("/crypto/{symbol}")
 def get_crypto(symbol: str):
