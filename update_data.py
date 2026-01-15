@@ -1,6 +1,6 @@
 import json
-import PyCRYPTO.scrapperCryptocompare as sc1
-import PyCRYPTO.scrapperCoursCryptomonnaies as sc2
+import scrapperCryptocompare as sc1
+import scrapperCoursCryptomonnaies as sc2
 from sqlalchemy.orm import Session
 from db import SessionLocal as DBSession
 from ingest import ingest_market_data, ingest_news
@@ -9,14 +9,12 @@ def run_pipeline(scrapper):
     session = DBSession()
     crypto_data = None
     match scrapper:
-        case "cryptocompare":
+        case 1:
             crypto_data1 = sc1.scrap_url()
             crypto_data = crypto_data1
-        case "courscryptomonnaies":
+        case 2:
             crypto_data2 = sc2.scrap_url()
             crypto_data = crypto_data2
-        case _:
-            pass
     try:
         if crypto_data:
             ingest_market_data(session, crypto_data)

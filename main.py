@@ -6,9 +6,9 @@ from update_data import run_pipeline
 
 app = FastAPI()
 
-@app.post("/scraping/manual")
-def manual_scraping():
-    run_pipeline()
+@app.post("/scraping/manual/{scrapper}")
+def manual_scraping(scrapper: int):
+    run_pipeline(scrapper)
     return {"status": "ok"}
 
 @app.get("/crypto/{symbol}")
