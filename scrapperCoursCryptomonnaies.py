@@ -27,11 +27,17 @@ def scrap_url():
         for match in push_pattern.finditer(script_tag.get_text()):
             extracted_push_blocks.append(match.group(0).strip())
 
+    # print("Extracted Push Blocks :")
+    # print(extracted_push_blocks)
+
     crypto_push_blocks = []
     for block in extracted_push_blocks:
         if "crypto-logos" in block:
             if "overflow-hidden border-y border-slate-200 bg-white" not in block:
                 crypto_push_blocks.append(block)
+
+    # print("Crypto Push Blocks :")
+    # print(crypto_push_blocks)
 
     crypto_list = []
 
@@ -90,4 +96,15 @@ def scrap_url():
             "timestamp": datetime.datetime.now().isoformat()
         })
 
+        # print("Crypto list :")
+        # print(crypto_list)
+
+        with open("scrapper_sc2.json", "w", encoding="utf-8") as f:
+            import json
+            json.dump({"Extracted push blocks": extracted_push_blocks}, f, ensure_ascii=False, indent=4)
+            json.dump({"Crypto push blocks": crypto_push_blocks}, f, ensure_ascii=False, indent=4)
+            json.dump({"Crypto list": crypto_list}, f, ensure_ascii=False, indent=4)
+
     return crypto_list
+
+scrap_url()

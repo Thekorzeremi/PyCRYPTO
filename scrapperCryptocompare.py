@@ -21,7 +21,7 @@ def scrap_url():
     soup = BeautifulSoup(html_content, "html.parser")
 
     coin_entries = []
-    symbol_candidates = []
+    symbol_candidates= []
     for a in soup.find_all("a", class_="popular-item"):
         href = urljoin("https://www.cryptocompare.com", a.get("href", "").strip())
         name_tag = a.find(class_="coins-name")
@@ -31,10 +31,11 @@ def scrap_url():
         coin_entries.append({"name": name, "href": href, "tick": tick})
         if tick:
             symbol_candidates.append(tick.upper())
-        else:
-            m = re.search(r'/coins/([^/]+)/', href)
-            if m:
-                symbol_candidates.append(m.group(1).upper())
+
+    # print("Coin Entries :")
+    # print(coin_entries)
+    # print("Symbol Candidates :")
+    # print(symbol_candidates)
 
     seen = set()
     symbol_candidates_unique = []
@@ -43,27 +44,29 @@ def scrap_url():
             seen.add(symbol)
             symbol_candidates_unique.append(symbol)
 
-    raw = {}
+    # print("Symbol Candidates Unique :")
+    # print(symbol_candidates_unique)
+
+    raw_infos = {}
     if symbol_candidates_unique:
         resp = requests.get(
             "https://min-api.cryptocompare.com/data/pricemultifull",
             params={"fsyms": ",".join(symbol_candidates_unique), "tsyms": "USD"},
             timeout=15
         )
-        resp.raise_for_status()
-        raw = resp.json().get("RAW", {})
+        raw_infos = resp.json().get("RAW", {})
 
-    timestamp = datetime.now().replace(microsecond=0).isoformat() + "Z"
+    # print("Raw Infos :")
+    # print(raw_infos)
+
+    timestamp = datetime.now()
     crypto_list = []
     for item in coin_entries:
         symbol = item.get("tick")
         if not symbol:
-            m = re.search(r'/coins/([^/]+)/', item.get("href", ""))
-            symbol = m.group(1) if m else None
-        if not symbol:
             continue
         symbol = symbol.upper().strip()
-        info = raw.get(symbol, {}).get("USD", {}) or {}
+        info = raw_infos.get(symbol, {}).get("USD", {}) or {}
         crypto_list.append({
             "symbol": symbol,
             "name": item.get("name"),
@@ -73,4 +76,17 @@ def scrap_url():
             "timestamp": timestamp
         })
 
+    # print("Final Crypto List :")
+    # print(crypto_list)
+    
+    with open("scrapper_sc1.json", "w", encoding="utf-8") as f:
+        import json
+        json.dump({"coin_entries": coin_entries}, f, ensure_ascii=False, indent=4)
+        json.dump({"symbol_candidates": symbol_candidates}, f, ensure_ascii=False, indent=4)
+        json.dump({"symbol_candidates_unique": symbol_candidates_unique}, f, ensure_ascii=False, indent=4)
+        json.dump({"raw_infos": raw_infos}, f, ensure_ascii=False, indent=4)
+        json.dump({"crypto_list": crypto_list}, f, ensure_ascii=False, indent=4)
+
     return crypto_list
+
+# scrap_url()
