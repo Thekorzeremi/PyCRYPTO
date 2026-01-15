@@ -10,9 +10,11 @@ def run_pipeline(scrapper):
     crypto_data = None
     match scrapper:
         case 1:
+            print("Lancement du scrapperCryptocompare...")
             crypto_data1 = sc1.scrap_url()
             crypto_data = crypto_data1
         case 2:
+            print("Lancement du scrapperCoursCryptomonnaies...")
             crypto_data2 = sc2.scrap_url()
             crypto_data = crypto_data2
     try:

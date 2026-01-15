@@ -107,4 +107,4 @@ def scrap_url():
 
     return crypto_list
 
-scrap_url()
+# scrap_url()

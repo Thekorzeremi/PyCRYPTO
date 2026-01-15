@@ -59,7 +59,7 @@ def scrap_url():
     # print("Raw Infos :")
     # print(raw_infos)
 
-    timestamp = datetime.now()
+    timestamp = datetime.utcnow().replace(microsecond=0).isoformat() + "Z"
     crypto_list = []
     for item in coin_entries:
         symbol = item.get("tick")
