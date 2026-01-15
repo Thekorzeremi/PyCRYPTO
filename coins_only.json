@@ -1,0 +1,566 @@
+[
+    {
+        "name": "USDC",
+        "symbol": "https://pdconfaitguxqbopsmib.supabase.co/storage/v1/object/public/crypto-logos/3408-usdc.png",
+        "price_eur": "0,8594",
+        "variation_pct": "+0.01"
+    },
+    {
+        "name": "TRON",
+        "symbol": "https://pdconfaitguxqbopsmib.supabase.co/storage/v1/object/public/crypto-logos/1958-trx.png",
+        "price_eur": "0,2627",
+        "variation_pct": "+1.19"
+    },
+    {
+        "name": "Dogecoin",
+        "symbol": "https://pdconfaitguxqbopsmib.supabase.co/storage/v1/object/public/crypto-logos/74-doge.png",
+        "price_eur": "0,1237",
+        "variation_pct": "-1.88"
+    },
+    {
+        "name": "Cardano",
+        "symbol": "https://pdconfaitguxqbopsmib.supabase.co/storage/v1/object/public/crypto-logos/2010-ada.png",
+        "price_eur": "0,3488",
+        "variation_pct": "-2.37"
+    },
+    {
+        "name": "Monero",
+        "symbol": "https://pdconfaitguxqbopsmib.supabase.co/storage/v1/object/public/crypto-logos/328-xmr.png",
+        "price_eur": "617,19",
+        "variation_pct": "+1.85"
+    },
+    {
+        "name": "Bitcoin Cash",
+        "symbol": "https://pdconfaitguxqbopsmib.supabase.co/storage/v1/object/public/crypto-logos/1831-bch.png",
+        "price_eur": "531,49",
+        "variation_pct": "+2.76"
+    },
+    {
+        "name": "Chainlink",
+        "symbol": "https://pdconfaitguxqbopsmib.supabase.co/storage/v1/object/public/crypto-logos/1975-link.png",
+        "price_eur": "12,03",
+        "variation_pct": "+0.51"
+    },
+    {
+        "name": "UNUS SED LEO",
+        "symbol": "https://pdconfaitguxqbopsmib.supabase.co/storage/v1/object/public/crypto-logos/3957-leo.png",
+        "price_eur": "7,65",
+        "variation_pct": "-1.59"
+    },
+    {
+        "name": "Hyperliquid",
+        "symbol": "https://pdconfaitguxqbopsmib.supabase.co/storage/v1/object/public/crypto-logos/32196-hype.png",
+        "price_eur": "21,65",
+        "variation_pct": "-3.23"
+    },
+    {
+        "name": "Stellar",
+        "symbol": "https://pdconfaitguxqbopsmib.supabase.co/storage/v1/object/public/crypto-logos/512-xlm.png",
+        "price_eur": "0,1988",
+        "variation_pct": "-3.49"
+    },
+    {
+        "name": "Zcash",
+        "symbol": "https://pdconfaitguxqbopsmib.supabase.co/storage/v1/object/public/crypto-logos/1437-zec.png",
+        "price_eur": "378,90",
+        "variation_pct": "+6.07"
+    },
+    {
+        "name": "Sui",
+        "symbol": "https://pdconfaitguxqbopsmib.supabase.co/storage/v1/object/public/crypto-logos/20947-sui.png",
+        "price_eur": "1,56",
+        "variation_pct": "-0.88"
+    },
+    {
+        "name": "Ethena USDe",
+        "symbol": "https://pdconfaitguxqbopsmib.supabase.co/storage/v1/object/public/crypto-logos/29470-usde.png",
+        "price_eur": "0,8594",
+        "variation_pct": "-0.00"
+    },
+    {
+        "name": "Avalanche",
+        "symbol": "https://pdconfaitguxqbopsmib.supabase.co/storage/v1/object/public/crypto-logos/5805-avax.png",
+        "price_eur": "12,30",
+        "variation_pct": "-1.44"
+    },
+    {
+        "name": "Litecoin",
+        "symbol": "https://pdconfaitguxqbopsmib.supabase.co/storage/v1/object/public/crypto-logos/2-ltc.png",
+        "price_eur": "64,94",
+        "variation_pct": "-3.73"
+    },
+    {
+        "name": "Dai",
+        "symbol": "https://pdconfaitguxqbopsmib.supabase.co/storage/v1/object/public/crypto-logos/4943-dai.png",
+        "price_eur": "0,8594",
+        "variation_pct": "-0.00"
+    },
+    {
+        "name": "Hedera",
+        "symbol": "https://pdconfaitguxqbopsmib.supabase.co/storage/v1/object/public/crypto-logos/4642-hbar.png",
+        "price_eur": "0,1041",
+        "variation_pct": "-2.29"
+    },
+    {
+        "name": "Shiba Inu",
+        "symbol": "https://pdconfaitguxqbopsmib.supabase.co/storage/v1/object/public/crypto-logos/5994-shib.png",
+        "price_eur": "0,00000735",
+        "variation_pct": "-2.00"
+    },
+    {
+        "name": "Canton",
+        "symbol": "https://pdconfaitguxqbopsmib.supabase.co/storage/v1/object/public/crypto-logos/37263-cc.png",
+        "price_eur": "0,1155",
+        "variation_pct": "-4.83"
+    },
+    {
+        "name": "World Liberty Financial",
+        "symbol": "https://pdconfaitguxqbopsmib.supabase.co/storage/v1/object/public/crypto-logos/33251-wlfi.png",
+        "price_eur": "0,1459",
+        "variation_pct": "-5.99"
+    },
+    {
+        "name": "Toncoin",
+        "symbol": "https://pdconfaitguxqbopsmib.supabase.co/storage/v1/object/public/crypto-logos/11419-ton.png",
+        "price_eur": "1,52",
+        "variation_pct": "-0.72"
+    },
+    {
+        "name": "Cronos",
+        "symbol": "https://pdconfaitguxqbopsmib.supabase.co/storage/v1/object/public/crypto-logos/3635-cro.png",
+        "price_eur": "0,0879",
+        "variation_pct": "-0.67"
+    },
+    {
+        "name": "PayPal USD",
+        "symbol": "https://pdconfaitguxqbopsmib.supabase.co/storage/v1/object/public/crypto-logos/27772-pyusd.png",
+        "price_eur": "0,8592",
+        "variation_pct": "+0.02"
+    },
+    {
+        "name": "Polkadot",
+        "symbol": "https://pdconfaitguxqbopsmib.supabase.co/storage/v1/object/public/crypto-logos/6636-dot.png",
+        "price_eur": "1,90",
+        "variation_pct": "-1.87"
+    },
+    {
+        "name": "Uniswap",
+        "symbol": "https://pdconfaitguxqbopsmib.supabase.co/storage/v1/object/public/crypto-logos/7083-uni.png",
+        "price_eur": "4,71",
+        "variation_pct": "-4.07"
+    },
+    {
+        "name": "World Liberty Financial USD",
+        "symbol": "https://pdconfaitguxqbopsmib.supabase.co/storage/v1/object/public/crypto-logos/36148-usd1.png",
+        "price_eur": "0,8589",
+        "variation_pct": "+0.01"
+    },
+    {
+        "name": "Mantle",
+        "symbol": "https://pdconfaitguxqbopsmib.supabase.co/storage/v1/object/public/crypto-logos/27075-mnt.png",
+        "price_eur": "0,8346",
+        "variation_pct": "-1.27"
+    },
+    {
+        "name": "Bittensor",
+        "symbol": "https://pdconfaitguxqbopsmib.supabase.co/storage/v1/object/public/crypto-logos/22974-tao.png",
+        "price_eur": "245,12",
+        "variation_pct": "-2.04"
+    },
+    {
+        "name": "Aave",
+        "symbol": "https://pdconfaitguxqbopsmib.supabase.co/storage/v1/object/public/crypto-logos/7278-aave.png",
+        "price_eur": "150,28",
+        "variation_pct": "-0.16"
+    },
+    {
+        "name": "Bitget Token",
+        "symbol": "https://pdconfaitguxqbopsmib.supabase.co/storage/v1/object/public/crypto-logos/11092-bgb.png",
+        "price_eur": "3,20",
+        "variation_pct": "+2.18"
+    },
+    {
+        "name": "Pepe",
+        "symbol": "https://pdconfaitguxqbopsmib.supabase.co/storage/v1/object/public/crypto-logos/24478-pepe.png",
+        "price_eur": "0,00000515",
+        "variation_pct": "-8.31"
+    },
+    {
+        "name": "OKB",
+        "symbol": "https://pdconfaitguxqbopsmib.supabase.co/storage/v1/object/public/crypto-logos/3897-okb.png",
+        "price_eur": "99,37",
+        "variation_pct": "+0.31"
+    },
+    {
+        "name": "Internet Computer",
+        "symbol": "https://pdconfaitguxqbopsmib.supabase.co/storage/v1/object/public/crypto-logos/8916-icp.png",
+        "price_eur": "3,67",
+        "variation_pct": "+9.02"
+    },
+    {
+        "name": "NEAR Protocol",
+        "symbol": "https://pdconfaitguxqbopsmib.supabase.co/storage/v1/object/public/crypto-logos/6535-near.png",
+        "price_eur": "1,55",
+        "variation_pct": "-1.59"
+    },
+    {
+        "name": "Ethereum Classic",
+        "symbol": "https://pdconfaitguxqbopsmib.supabase.co/storage/v1/object/public/crypto-logos/1321-etc.png",
+        "price_eur": "11,17",
+        "variation_pct": "-1.00"
+    },
+    {
+        "name": "MemeCore",
+        "symbol": "https://pdconfaitguxqbopsmib.supabase.co/storage/v1/object/public/crypto-logos/35491-m.png",
+        "price_eur": "1,38",
+        "variation_pct": "-0.25"
+    },
+    {
+        "name": "Tether Gold",
+        "symbol": "https://pdconfaitguxqbopsmib.supabase.co/storage/v1/object/public/crypto-logos/5176-xaut.png",
+        "price_eur": "3 963,29",
+        "variation_pct": "-0.32"
+    },
+    {
+        "name": "Ethena",
+        "symbol": "https://pdconfaitguxqbopsmib.supabase.co/storage/v1/object/public/crypto-logos/30171-ena.png",
+        "price_eur": "0,2005",
+        "variation_pct": "-2.48"
+    },
+    {
+        "name": "Aster",
+        "symbol": "https://pdconfaitguxqbopsmib.supabase.co/storage/v1/object/public/crypto-logos/36341-aster.png",
+        "price_eur": "0,6338",
+        "variation_pct": "-2.07"
+    },
+    {
+        "name": "PAX Gold",
+        "symbol": "https://pdconfaitguxqbopsmib.supabase.co/storage/v1/object/public/crypto-logos/4705-paxg.png",
+        "price_eur": "3 974,75",
+        "variation_pct": "-0.34"
+    },
+    {
+        "name": "Pi",
+        "symbol": "https://pdconfaitguxqbopsmib.supabase.co/storage/v1/object/public/crypto-logos/35697-pi.png",
+        "price_eur": "0,1782",
+        "variation_pct": "-0.78"
+    },
+    {
+        "name": "Polygon (prev. MATIC)",
+        "symbol": "https://pdconfaitguxqbopsmib.supabase.co/storage/v1/object/public/crypto-logos/28321-pol.png",
+        "price_eur": "0,1342",
+        "variation_pct": "-0.76"
+    },
+    {
+        "name": "Worldcoin",
+        "symbol": "https://pdconfaitguxqbopsmib.supabase.co/storage/v1/object/public/crypto-logos/13502-wld.png",
+        "price_eur": "0,5082",
+        "variation_pct": "-2.65"
+    },
+    {
+        "name": "KuCoin Token",
+        "symbol": "https://pdconfaitguxqbopsmib.supabase.co/storage/v1/object/public/crypto-logos/2087-kcs.png",
+        "price_eur": "9,95",
+        "variation_pct": "+0.94"
+    },
+    {
+        "name": "Bitcoin",
+        "symbol": "https://pdconfaitguxqbopsmib.supabase.co/storage/v1/object/public/crypto-logos/1-btc.png",
+        "price_eur": "83 077,28",
+        "variation_pct": "+1.68"
+    },
+    {
+        "name": "Ethereum",
+        "symbol": "https://pdconfaitguxqbopsmib.supabase.co/storage/v1/object/public/crypto-logos/1027-eth.png",
+        "price_eur": "2 880,31",
+        "variation_pct": "+1.69"
+    },
+    {
+        "name": "Tether USDt",
+        "symbol": "https://pdconfaitguxqbopsmib.supabase.co/storage/v1/object/public/crypto-logos/825-usdt.png",
+        "price_eur": "0,8593",
+        "variation_pct": "+0.03"
+    },
+    {
+        "name": "XRP",
+        "symbol": "https://pdconfaitguxqbopsmib.supabase.co/storage/v1/object/public/crypto-logos/52-xrp.png",
+        "price_eur": "1,81",
+        "variation_pct": "-0.64"
+    },
+    {
+        "name": "BNB",
+        "symbol": "https://pdconfaitguxqbopsmib.supabase.co/storage/v1/object/public/crypto-logos/1839-bnb.png",
+        "price_eur": "806,35",
+        "variation_pct": "+0.41"
+    },
+    {
+        "name": "Solana",
+        "symbol": "https://pdconfaitguxqbopsmib.supabase.co/storage/v1/object/public/crypto-logos/5426-sol.png",
+        "price_eur": "124,19",
+        "variation_pct": "-0.07"
+    },
+    {
+        "name": "USDC",
+        "symbol": "https://pdconfaitguxqbopsmib.supabase.co/storage/v1/object/public/crypto-logos/3408-usdc.png",
+        "price_eur": "0,8594",
+        "variation_pct": "+0.01"
+    },
+    {
+        "name": "TRON",
+        "symbol": "https://pdconfaitguxqbopsmib.supabase.co/storage/v1/object/public/crypto-logos/1958-trx.png",
+        "price_eur": "0,2627",
+        "variation_pct": "+1.19"
+    },
+    {
+        "name": "Dogecoin",
+        "symbol": "https://pdconfaitguxqbopsmib.supabase.co/storage/v1/object/public/crypto-logos/74-doge.png",
+        "price_eur": "0,1237",
+        "variation_pct": "-1.88"
+    },
+    {
+        "name": "Cardano",
+        "symbol": "https://pdconfaitguxqbopsmib.supabase.co/storage/v1/object/public/crypto-logos/2010-ada.png",
+        "price_eur": "0,3488",
+        "variation_pct": "-2.37"
+    },
+    {
+        "name": "Monero",
+        "symbol": "https://pdconfaitguxqbopsmib.supabase.co/storage/v1/object/public/crypto-logos/328-xmr.png",
+        "price_eur": "617,19",
+        "variation_pct": "+1.85"
+    },
+    {
+        "name": "Bitcoin Cash",
+        "symbol": "https://pdconfaitguxqbopsmib.supabase.co/storage/v1/object/public/crypto-logos/1831-bch.png",
+        "price_eur": "531,49",
+        "variation_pct": "+2.76"
+    },
+    {
+        "name": "Chainlink",
+        "symbol": "https://pdconfaitguxqbopsmib.supabase.co/storage/v1/object/public/crypto-logos/1975-link.png",
+        "price_eur": "12,03",
+        "variation_pct": "+0.51"
+    },
+    {
+        "name": "UNUS SED LEO",
+        "symbol": "https://pdconfaitguxqbopsmib.supabase.co/storage/v1/object/public/crypto-logos/3957-leo.png",
+        "price_eur": "7,65",
+        "variation_pct": "-1.59"
+    },
+    {
+        "name": "Hyperliquid",
+        "symbol": "https://pdconfaitguxqbopsmib.supabase.co/storage/v1/object/public/crypto-logos/32196-hype.png",
+        "price_eur": "21,65",
+        "variation_pct": "-3.23"
+    },
+    {
+        "name": "Stellar",
+        "symbol": "https://pdconfaitguxqbopsmib.supabase.co/storage/v1/object/public/crypto-logos/512-xlm.png",
+        "price_eur": "0,1988",
+        "variation_pct": "-3.49"
+    },
+    {
+        "name": "Zcash",
+        "symbol": "https://pdconfaitguxqbopsmib.supabase.co/storage/v1/object/public/crypto-logos/1437-zec.png",
+        "price_eur": "378,90",
+        "variation_pct": "+6.07"
+    },
+    {
+        "name": "Sui",
+        "symbol": "https://pdconfaitguxqbopsmib.supabase.co/storage/v1/object/public/crypto-logos/20947-sui.png",
+        "price_eur": "1,56",
+        "variation_pct": "-0.88"
+    },
+    {
+        "name": "Ethena USDe",
+        "symbol": "https://pdconfaitguxqbopsmib.supabase.co/storage/v1/object/public/crypto-logos/29470-usde.png",
+        "price_eur": "0,8594",
+        "variation_pct": "-0.00"
+    },
+    {
+        "name": "Avalanche",
+        "symbol": "https://pdconfaitguxqbopsmib.supabase.co/storage/v1/object/public/crypto-logos/5805-avax.png",
+        "price_eur": "12,30",
+        "variation_pct": "-1.44"
+    },
+    {
+        "name": "Litecoin",
+        "symbol": "https://pdconfaitguxqbopsmib.supabase.co/storage/v1/object/public/crypto-logos/2-ltc.png",
+        "price_eur": "64,94",
+        "variation_pct": "-3.73"
+    },
+    {
+        "name": "Dai",
+        "symbol": "https://pdconfaitguxqbopsmib.supabase.co/storage/v1/object/public/crypto-logos/4943-dai.png",
+        "price_eur": "0,8594",
+        "variation_pct": "-0.00"
+    },
+    {
+        "name": "Hedera",
+        "symbol": "https://pdconfaitguxqbopsmib.supabase.co/storage/v1/object/public/crypto-logos/4642-hbar.png",
+        "price_eur": "0,1041",
+        "variation_pct": "-2.29"
+    },
+    {
+        "name": "Shiba Inu",
+        "symbol": "https://pdconfaitguxqbopsmib.supabase.co/storage/v1/object/public/crypto-logos/5994-shib.png",
+        "price_eur": "0,00000735",
+        "variation_pct": "-2.00"
+    },
+    {
+        "name": "Canton",
+        "symbol": "https://pdconfaitguxqbopsmib.supabase.co/storage/v1/object/public/crypto-logos/37263-cc.png",
+        "price_eur": "0,1155",
+        "variation_pct": "-4.83"
+    },
+    {
+        "name": "World Liberty Financial",
+        "symbol": "https://pdconfaitguxqbopsmib.supabase.co/storage/v1/object/public/crypto-logos/33251-wlfi.png",
+        "price_eur": "0,1459",
+        "variation_pct": "-5.99"
+    },
+    {
+        "name": "Toncoin",
+        "symbol": "https://pdconfaitguxqbopsmib.supabase.co/storage/v1/object/public/crypto-logos/11419-ton.png",
+        "price_eur": "1,52",
+        "variation_pct": "-0.72"
+    },
+    {
+        "name": "Cronos",
+        "symbol": "https://pdconfaitguxqbopsmib.supabase.co/storage/v1/object/public/crypto-logos/3635-cro.png",
+        "price_eur": "0,0879",
+        "variation_pct": "-0.67"
+    },
+    {
+        "name": "PayPal USD",
+        "symbol": "https://pdconfaitguxqbopsmib.supabase.co/storage/v1/object/public/crypto-logos/27772-pyusd.png",
+        "price_eur": "0,8592",
+        "variation_pct": "+0.02"
+    },
+    {
+        "name": "Polkadot",
+        "symbol": "https://pdconfaitguxqbopsmib.supabase.co/storage/v1/object/public/crypto-logos/6636-dot.png",
+        "price_eur": "1,90",
+        "variation_pct": "-1.87"
+    },
+    {
+        "name": "Uniswap",
+        "symbol": "https://pdconfaitguxqbopsmib.supabase.co/storage/v1/object/public/crypto-logos/7083-uni.png",
+        "price_eur": "4,71",
+        "variation_pct": "-4.07"
+    },
+    {
+        "name": "World Liberty Financial USD",
+        "symbol": "https://pdconfaitguxqbopsmib.supabase.co/storage/v1/object/public/crypto-logos/36148-usd1.png",
+        "price_eur": "0,8589",
+        "variation_pct": "+0.01"
+    },
+    {
+        "name": "Mantle",
+        "symbol": "https://pdconfaitguxqbopsmib.supabase.co/storage/v1/object/public/crypto-logos/27075-mnt.png",
+        "price_eur": "0,8346",
+        "variation_pct": "-1.27"
+    },
+    {
+        "name": "Bittensor",
+        "symbol": "https://pdconfaitguxqbopsmib.supabase.co/storage/v1/object/public/crypto-logos/22974-tao.png",
+        "price_eur": "245,12",
+        "variation_pct": "-2.04"
+    },
+    {
+        "name": "Aave",
+        "symbol": "https://pdconfaitguxqbopsmib.supabase.co/storage/v1/object/public/crypto-logos/7278-aave.png",
+        "price_eur": "150,28",
+        "variation_pct": "-0.16"
+    },
+    {
+        "name": "Bitget Token",
+        "symbol": "https://pdconfaitguxqbopsmib.supabase.co/storage/v1/object/public/crypto-logos/11092-bgb.png",
+        "price_eur": "3,20",
+        "variation_pct": "+2.18"
+    },
+    {
+        "name": "Pepe",
+        "symbol": "https://pdconfaitguxqbopsmib.supabase.co/storage/v1/object/public/crypto-logos/24478-pepe.png",
+        "price_eur": "0,00000515",
+        "variation_pct": "-8.31"
+    },
+    {
+        "name": "OKB",
+        "symbol": "https://pdconfaitguxqbopsmib.supabase.co/storage/v1/object/public/crypto-logos/3897-okb.png",
+        "price_eur": "99,37",
+        "variation_pct": "+0.31"
+    },
+    {
+        "name": "Internet Computer",
+        "symbol": "https://pdconfaitguxqbopsmib.supabase.co/storage/v1/object/public/crypto-logos/8916-icp.png",
+        "price_eur": "3,67",
+        "variation_pct": "+9.02"
+    },
+    {
+        "name": "NEAR Protocol",
+        "symbol": "https://pdconfaitguxqbopsmib.supabase.co/storage/v1/object/public/crypto-logos/6535-near.png",
+        "price_eur": "1,55",
+        "variation_pct": "-1.59"
+    },
+    {
+        "name": "Ethereum Classic",
+        "symbol": "https://pdconfaitguxqbopsmib.supabase.co/storage/v1/object/public/crypto-logos/1321-etc.png",
+        "price_eur": "11,17",
+        "variation_pct": "-1.00"
+    },
+    {
+        "name": "MemeCore",
+        "symbol": "https://pdconfaitguxqbopsmib.supabase.co/storage/v1/object/public/crypto-logos/35491-m.png",
+        "price_eur": "1,38",
+        "variation_pct": "-0.25"
+    },
+    {
+        "name": "Tether Gold",
+        "symbol": "https://pdconfaitguxqbopsmib.supabase.co/storage/v1/object/public/crypto-logos/5176-xaut.png",
+        "price_eur": "3 963,29",
+        "variation_pct": "-0.32"
+    },
+    {
+        "name": "Ethena",
+        "symbol": "https://pdconfaitguxqbopsmib.supabase.co/storage/v1/object/public/crypto-logos/30171-ena.png",
+        "price_eur": "0,2005",
+        "variation_pct": "-2.48"
+    },
+    {
+        "name": "Aster",
+        "symbol": "https://pdconfaitguxqbopsmib.supabase.co/storage/v1/object/public/crypto-logos/36341-aster.png",
+        "price_eur": "0,6338",
+        "variation_pct": "-2.07"
+    },
+    {
+        "name": "PAX Gold",
+        "symbol": "https://pdconfaitguxqbopsmib.supabase.co/storage/v1/object/public/crypto-logos/4705-paxg.png",
+        "price_eur": "3 974,75",
+        "variation_pct": "-0.34"
+    },
+    {
+        "name": "Pi",
+        "symbol": "https://pdconfaitguxqbopsmib.supabase.co/storage/v1/object/public/crypto-logos/35697-pi.png",
+        "price_eur": "0,1782",
+        "variation_pct": "-0.78"
+    },
+    {
+        "name": "Polygon (prev. MATIC)",
+        "symbol": "https://pdconfaitguxqbopsmib.supabase.co/storage/v1/object/public/crypto-logos/28321-pol.png",
+        "price_eur": "0,1342",
+        "variation_pct": "-0.76"
+    },
+    {
+        "name": "Worldcoin",
+        "symbol": "https://pdconfaitguxqbopsmib.supabase.co/storage/v1/object/public/crypto-logos/13502-wld.png",
+        "price_eur": "0,5082",
+        "variation_pct": "-2.65"
+    },
+    {
+        "name": "KuCoin Token",
+        "symbol": "https://pdconfaitguxqbopsmib.supabase.co/storage/v1/object/public/crypto-logos/2087-kcs.png",
+        "price_eur": "9,95",
+        "variation_pct": "+0.94"
+    }
+]
