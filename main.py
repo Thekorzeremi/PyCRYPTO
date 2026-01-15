@@ -3,8 +3,17 @@ from sqlalchemy.orm import Session
 from db import SessionLocal as DBSession
 from models import CryptoAsset, MarketData
 from update_data import run_pipeline
+from contextlib import asynccontextmanager
+from scheduler import start_scheduler, shutdown_scheduler
 
-app = FastAPI()
+@asynccontextmanager
+async def lifespan(_app: FastAPI):
+    # Startup : démarrage du scheduler
+    start_scheduler()
+    yield  # application tourne
+    shutdown_scheduler()
+
+app = FastAPI(lifespan=lifespan)
 
 @app.post("/scraping/manual/{scrapper}")
 def manual_scraping(scrapper: int):
